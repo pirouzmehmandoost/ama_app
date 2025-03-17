@@ -23,9 +23,9 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 - AI
 
-  - [Vercel AI SDK](https://sdk.vercel.ai/docs)
-    - API toolkit for generating text, structured objects, tool calls with LLMs, useful hooks
-  - [OpenAI](https://platform.openai.com/docs/overview) - AI models and API supported by Vercel's AI SDK
+  - [Vercel AI SDK](https://sdk.vercel.ai/docs) - Extensive toolkit for supporting various AI SDK Providers.
+  - [OpenAI](https://platform.openai.com/docs/overview) - Provider, language model support for OpenAI API's (completion, responses, chat, embeddings).
+    - Current language model in use: GPT-4o-mini
 
 - Styling
 
@@ -33,16 +33,20 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
   - [next/font](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font)
 
 - Data Persistence
-
-  - [Vercel Postgres powered by Neon](https://vercel.com/storage/postgres) - For saving chat history and user data
-  - [Vercel Blob](https://vercel.com/storage/blob) - I'm naming my first born after this.
-  - [NextAuth.js](https://github.com/nextauthjs/next-auth)
+  - [Vercel Blob](https://vercel.com/storage/blob) - For efficient file storage.
+  - [Vercel Postgres powered by Neon](https://vercel.com/storage/postgres) - For saving chat history and metadata
+  <!-- - [NextAuth.js](https://github.com/nextauthjs/next-auth) -->
 
 ## Notes:
 
-## current state of the app at 10:24AM PST
+## State of the app as of Saturday, 10:24PM PST
 
 - Users can chat and the agent will recall afforementioned prompts and response data.
+
+## State of the app as of Sunday, 10:24PM PST
+
+- Enabled tool calls- LLM can now leverage tools to handle discrete tasks (such as math, data fetching and formatting).
+- Enabled multi-step tool calls which allow LLM to operate on results of prior calls.
 
 ## How I'm currently structuring a generated environmental report-
 
