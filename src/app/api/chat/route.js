@@ -1,6 +1,6 @@
 import { openai } from "@ai-sdk/openai";
 import { streamText, tool, UIMessage } from "ai";
-import { z } from "zod";
+import { z } from "zod"; // to validate schema of tooling
 
 // Allow streaming responses up to 30 seconds
 export const maxDuration = 30;

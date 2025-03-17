@@ -1,19 +1,6 @@
 "use client";
 
-import OpenAI from "openai";
 import { useChat } from "@ai-sdk/react";
-// const openai = new OpenAI({
-//   apiKey:
-//     "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",
-// });
-
-// const completion = openai.chat.completions.create({
-//   model: "gpt-4o-mini",
-//   store: true,
-//   messages: [{ role: "user", content: "write a haiku about ai" }],
-// });
-
-// completion.then((result) => console.log(result.choices[0].message));
 
 export function Chat() {
   const { messages, input, handleInputChange, handleSubmit } = useChat({
@@ -53,10 +40,21 @@ export function Chat() {
 
 export default function Home() {
   return (
-    // <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
     <main className="flex flex-col w-full h-full items-center justify-items-center p-8 font-[family-name:var(--font-geist-sans)]">
       <Chat />
     </main>
-    // </div>
   );
 }
+
+// import OpenAI from "openai";
+// const openai = new OpenAI({
+//   apiKey:
+//     "...",
+// });
+
+// const completion = openai.chat.completions.create({
+//   model: "gpt-4o-mini",
+//   store: true,
+//   messages: [{ role: "user", content: "whats the cooler fish, squid or dolphin" }],
+// });
+// completion.then((result) => console.log(result.choices[0].message));
