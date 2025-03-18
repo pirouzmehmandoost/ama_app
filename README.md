@@ -64,7 +64,7 @@ Embeddings can be stored in databases which support vectors. Postgres can be con
 
 ## Enable file uploading-
 
-Allow for users to upload CSV files on which RAG will train.
+Allow for users to upload CSV files and to migrate db on which RAG may train.
 
 ## generated environmental report-
 
