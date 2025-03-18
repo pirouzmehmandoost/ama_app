@@ -1,5 +1,4 @@
 "use client";
-
 import { useChat } from "@ai-sdk/react";
 
 export function Chat() {
@@ -25,7 +24,6 @@ export function Chat() {
           })}
         </div>
       ))}
-
       <form onSubmit={handleSubmit}>
         <input
           className="fixed dark:bg-zinc-900 bottom-0 w-4/5 h-fit max-w-md p-2 mb-8 border border-zinc-300 dark:border-zinc-800 rounded shadow-xl"
@@ -45,16 +43,3 @@ export default function Home() {
     </main>
   );
 }
-
-// import OpenAI from "openai";
-// const openai = new OpenAI({
-//   apiKey:
-//     "...",
-// });
-
-// const completion = openai.chat.completions.create({
-//   model: "gpt-4o-mini",
-//   store: true,
-//   messages: [{ role: "user", content: "whats the cooler fish, squid or dolphin" }],
-// });
-// completion.then((result) => console.log(result.choices[0].message));

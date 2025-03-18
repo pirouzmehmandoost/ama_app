@@ -10,8 +10,6 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
 ## Tools Used
 
 - Frameworks
@@ -35,7 +33,7 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 - Data Persistence
   - [Vercel Blob](https://vercel.com/storage/blob) - For efficient file storage.
   - [Vercel Postgres powered by Neon](https://vercel.com/storage/postgres) - For saving chat history and metadata
-  <!-- - [NextAuth.js](https://github.com/nextauthjs/next-auth) -->
+  - [Neon](https://neon.tech) -[Neon pgvector extension](https://neon.tech/docs/extensions/pgvector) - LLM Embeddings can be stored in databases which support vectors. Postgres can be configured as a vector store with Neon's pgvector extension.
 
 ## Notes:
 
@@ -46,32 +44,53 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 ## State of the app as of Sunday, 10:24PM PST
 
 - Enabled tool calls- LLM can now leverage tools to handle discrete tasks (such as math, data fetching and formatting).
-- Enabled multi-step tool calls which allow LLM to operate on results of prior calls.
 
-## How I'm currently structuring a generated environmental report-
+## State of the app as of Sunday, 10:00PM PST
+
+- Enabled multi-step tool calls which allow LLM to operate on results of prior calls.
+- Set up Postgres database with Neon integration
+- Added Neon pgvector extension enabling Postgres to store embeddings
+- Set up Vercel Blob integration to store files
+
+## To-dos:
+
+## Write RAG chatbot logic-
+
+Write logic to generate embeddings. Currently the LLM cannot be trained on new data, which is key to being a RAG assistant.
+
+## Write logic to allow interactions with database.
+
+Embeddings can be stored in databases which support vectors. Postgres can be configured as a vector store with Neon's pgvector extension.
+
+## Enable file uploading-
+
+Allow for users to upload CSV files on which RAG will train.
+
+## generated environmental report-
+
+Design UI in which each numbered section below will be generatively added during interaction with the assistant. Generated elements can be edited, and may be drag/dropped onto a grid layout.
+
+The asistant will prompt the user to either define the following list items, such as the title, or to generate based on uploaded content.
 
 1.) Define the Purpose: Determine the specific focus of the report (e.g., climate change, pollution, biodiversity).
 
 2.) Gather Data: Collect relevant data and statistics from credible sources. This may include scientific studies, government reports, and environmental organizations.
 
-3.) Outline the Report- provide the following:
+3.) Outline the Report- provide a chat message or file upload from which to generate the following:
 
-- Title: A clear and concise title.
-- Introduction: Briefly introduce the topic and its importance.
+- Title
+- Introduction: Briefl introduction of the topic, its significance.
 - Background Information: Provide context and relevant background data.
-- Current Situation: Discuss the current state of the environment related to your topic.
+- Current Situation: Discuss the current state of the environment related to title.
 - Impact Analysis: Analyze the effects of the current situation on ecosystems, human health, etc.
 - Recommendations: Suggest actionable steps to address the issues.
 - Conclusion: Summarize the key points and emphasize the importance of action.
+- Bibliography
 
-  4.) Use GPT for Content Generation:
-  You can prompt GPT to generate sections of the report based on your outline. For example:
+## generated environmental report-
 
-- "Write an introduction about the impact of climate change on polar bears."
-- "Summarize the current pollution levels in urban areas."
+Allow for file size formatting, downloading, messaging, email.
 
-  5.) Edit and Refine: Review the generated content for accuracy, coherence, and flow. Make necessary adjustments to ensure it aligns with your objectives.
+## Refine UI-
 
-  6.) Cite Sources: Ensure that all data and claims are backed by credible sources, and include a bibliography if necessary.
-
-  7.) Format the Report: Organize the content into a professional format, including headings, subheadings, and visuals if applicable.
+I've placed this task as last on my list as the others require more time and learning.
