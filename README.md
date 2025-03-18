@@ -14,7 +14,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 - Frameworks
 
-  - [Next.js](https://nextjs.org/docs)
+  - [Next.js 15](https://nextjs.org/docs)
     - Using App Router pattern for routing for navigation, React Server Components for performant server-side rendering
   - [Vercel](https://vercel.com/) - for rapid deployment, analytics, and seamless integration with Next.js
   - [React v19](https://react.dev/blog/2024/12/05/react-19)
