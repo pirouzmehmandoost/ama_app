@@ -66,11 +66,9 @@ Embeddings can be stored in databases which support vectors. Postgres can be con
 
 Allow for users to upload CSV files and to migrate db on which RAG may train.
 
-## generated environmental report-
+## Generate environmental report-
 
-Design UI in which each numbered section below will be generatively added during interaction with the assistant. Generated elements can be edited, and may be drag/dropped onto a grid layout.
-
-The asistant will prompt the user to either define the following list items, such as the title, or to generate based on uploaded content.
+The asistant should prompt the user to either define the following list items, such as the title, or to generate based on uploaded content.
 
 1.) Define the Purpose: Determine the specific focus of the report (e.g., climate change, pollution, biodiversity).
 
@@ -93,4 +91,9 @@ Allow for file size formatting, downloading, messaging, email.
 
 ## Refine UI-
 
-I've placed this task as last on my list as the others require more time and learning.
+- Each numbered section noted above will be generatively added during interaction with the assistant.
+- Generated elements such as text fields can be manually edited or revised by the assistant.
+- Elements may be drag/dropped onto a grid layout.
+- Tooltips and warnings should guide user during report generation.
+
+I've placed this task as last on my list as the others require more time to learn new skillsets.
