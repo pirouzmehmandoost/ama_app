@@ -1,8 +1,12 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). It is a function AI assistant with a barebones UI. Please read the TO-DO list below to review limitations!
 
-## Getting Started
+## Deloyed with Vercel
 
-First, run the development server:
+Visit: https://ama-app-nu.vercel.app/
+
+## Running locally
+
+To run locally the development server, you must provide your own OpenAI API key in a .env file. Add your key to .env as OPENAI_API_KEY="..."
 
 ```bash
 npm run dev
