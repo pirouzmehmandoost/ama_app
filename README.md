@@ -39,7 +39,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## State of the app as of Saturday, 10:24PM PST
 
-- Users can chat and the agent will recall afforementioned prompts and response data.
+- Users can chat and the agent will recall aforementioned prompts and response data.
 
 ## State of the app as of Sunday, 10:24PM PST
 
