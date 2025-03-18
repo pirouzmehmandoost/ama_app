@@ -49,7 +49,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 - Enabled tool calls- LLM can now leverage tools to handle discrete tasks (such as math, data fetching and formatting).
 
-## State of the app as of Sunday, 10:00PM PST
+## State of the app as of Monday, 10:00PM PST
 
 - Enabled multi-step tool calls which allow LLM to operate on results of prior calls.
 - Set up Postgres database with Neon integration
