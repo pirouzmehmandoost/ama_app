@@ -80,9 +80,9 @@ const links = [
   },
 ];
 
-const Links = ({ toggleMenu }) => {
+const Links = () => {
   return (
-    <div className="flex flex-col w-full h-fit justify-around text-center text-4xl uppercase text-slate-400 bg-slate-900/0">
+    <div className="flex flex-col w-fit h-fit justify-around text-center text-4xl uppercase text-slate-400 bg-slate-900/0">
       <div
         className="flex flex-col justify-evenly bg-slate-900/0"
         style={{
