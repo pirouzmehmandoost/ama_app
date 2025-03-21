@@ -8,13 +8,13 @@ const AboutPage = () => {
     <div className="flex flex-col w-full h-full mt-10">
       <div className="flex flex-row w-full h-fit justify-center my-10 ">
         <Link href="/" rel="noopener noreferrer">
-          <div className="cursor-pointer rounded-full w-fit h-fit p-6 text-neutral-600 bg-neutral-500/40 transition-all duration-500 ease-in-out hover:bg-neutral-500/20">
+          <div className="cursor-pointer rounded-full w-fit h-fit p-6 text-slate-600 bg-slate-900/40 transition-all duration-500 ease-in-out hover:bg-slate-800/20">
             <ArrowBackIosNewIcon fontSize="large" />
           </div>
         </Link>
       </div>
       <div
-        className={`flex flex-col w-full h-full place-items-center text-center text-neutral-600 uppercase text-3xl`}
+        className={`flex flex-col w-full h-full place-items-center text-center text-slate-400 uppercase text-3xl`}
       >
         <div className="flex flex-col justify-between h-full w-4/5">
           <p className="mt-4">
@@ -32,7 +32,7 @@ const AboutPage = () => {
                 target="blank"
               >
                 <span
-                  className={`pl-1 cursor-pointer text-neutral-500 italic transition-colors ease-in-out duration-300 hover:text-neutral-400`}
+                  className={`pl-1 cursor-pointer text-slate-500 italic transition-colors ease-in-out duration-300 hover:text-slate-400`}
                 >
                   Github repo
                 </span>
