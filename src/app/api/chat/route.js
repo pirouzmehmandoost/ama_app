@@ -13,6 +13,7 @@ export async function POST(req) {
     system: "You are a helpful assistant.",
     messages,
     tools: {
+      web_search_preview: openai.tools.webSearchPreview(),
       weather: tool({
         description: "Get the weather in a location (fahrenheit)",
         parameters: z.object({
