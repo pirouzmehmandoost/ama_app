@@ -36,7 +36,7 @@ export default function Chat() {
           <input
             className="fixed bottom-14 max-w-sm inset-x-0 sm:relative md:relative lg:relative xl:relative 2xl:relative sm:mb-8 md:mb-8 lg:mb-8 xl:mb-8 2xl:mb-8 w-full min-w-4/5 sm:min-w-80 md:min-w-80 lg:min-w-80 xl:min-w-80 2xl:min-w-80 h-fit mx-auto p-2 bg-blue-950/50 rounded-xl shadow-xl shadow-stone-950/60 text-indigo-50"
             value={input}
-            placeholder="Send a message"
+            placeholder="To send a message, press enter"
             onChange={handleInputChange}
           />
         </form>
