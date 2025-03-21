@@ -44,8 +44,8 @@ const variants = {
     open: {
       filter: "blur(0px)",
       opacity: 1,
-      width: "auto",
-      height: "auto",
+      width: "10vw",
+      height: "10vh",
       transition: {
         duration: 0.75,
         type: "easeInOut",
@@ -56,8 +56,8 @@ const variants = {
     closed: {
       filter: "blur(100px)",
       opacity: 0,
-      width: "auto",
-      height: "auto",
+      width: "1vw",
+      height: "1vh",
       transition: {
         delay: 0.5,
         duration: 0.75,
@@ -146,7 +146,8 @@ export default function Menu() {
           animate={isActive ? "open" : "closed"}
           initial="closed"
         >
-          <AnimatePresence>{isActive && <Links />}</AnimatePresence>
+          {isActive && <Links />}
+          {/* <AnimatePresence>{isActive && <Links />}</AnimatePresence> */}
         </motion.div>
       </div>
     </div>
