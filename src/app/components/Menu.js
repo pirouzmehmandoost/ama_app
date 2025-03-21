@@ -45,7 +45,7 @@ const variants = {
       filter: "blur(0px)",
       opacity: 1,
       width: "auto",
-      height: "100vh",
+      height: "auto",
       transition: {
         duration: 0.75,
         type: "easeInOut",
@@ -54,10 +54,10 @@ const variants = {
       },
     },
     closed: {
-      filter: "blur(500px)",
+      filter: "blur(100px)",
       opacity: 0,
-      width: "1vw",
-      height: "1vh",
+      width: "auto",
+      height: "auto",
       transition: {
         delay: 0.5,
         duration: 0.75,
@@ -82,7 +82,7 @@ const links = [
 
 const Links = () => {
   return (
-    <div className="flex flex-col w-fit h-fit justify-around text-center text-4xl uppercase text-slate-400 bg-slate-900/0">
+    <div className="flex flex-col w-fit h-fit justify-around text-center text-4xl uppercase text-slate-400 bg-slate-400/0">
       <div
         className="flex flex-col justify-evenly bg-slate-900/0"
         style={{
@@ -121,7 +121,7 @@ const ToggleButton = ({ isActive, toggleMenu }) => {
   return (
     <div
       onClick={() => toggleMenu()}
-      className={`w-fit h-fit inset-0 top-5 left-5 justify-center p-4 rounded-full cursor-pointer bg-slate-900/10 backdrop-blur-xl transition-all duration-1000 ease-in-out text-slate-400 hover:text-slate-500`}
+      className={`w-fit h-fit inset-0 top-5 left-5 justify-center p-4 rounded-full cursor-pointer bg-slate-900/0 backdrop-blur-xl transition-all duration-1000 ease-in-out text-slate-400 hover:text-slate-500`}
     >
       <MenuIcon fontSize="large" />
     </div>
