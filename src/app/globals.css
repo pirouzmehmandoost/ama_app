@@ -1,26 +1,95 @@
 @import "tailwindcss";
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
-}
+} */
 
-@theme inline {
-  --color-background: var(--background);
+/* @theme inline {
+   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
+} 
+*/
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  /* background: var(--background);
+  color: var(--foreground); */
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@utility mask-transparency-linear-xs {
+  mask-image: linear-gradient(
+    180deg,
+    transparent 10%,
+    white 15% 85%,
+    transparent 90%
+  );
+}
+
+@utility mask-transparency-linear-xs-* {
+  mask-image: linear-gradient(
+    180deg,
+    transparent 10%,
+    --value(--color- *) 15% 85%,
+    transparent 90%
+  );
+}
+@utility mask-transparency-linear-sm {
+  mask-image: linear-gradient(
+    180deg,
+    transparent 10%,
+    white 20% 80%,
+    transparent 90%
+  );
+}
+
+@utility mask-transparency-linear-sm-* {
+  mask-image: linear-gradient(
+    180deg,
+    transparent 10%,
+    --value(--color- *) 20% 80%,
+    transparent 90%
+  );
+}
+
+@utility mask-transparency-linear-* {
+  mask-image: linear-gradient(
+    180deg,
+    transparent 10%,
+    --value(--color- *) 20% 80%,
+    transparent 90%
+  );
+}
+
+@utility mask-transparency-radial-xs {
+  mask-image: radial-gradient(
+    ellipse 90% 90% at 50% 50%,
+    white 5%,
+    transparent 95%
+  );
+}
+
+@utility mask-transparency-radial-sm {
+  mask-image: radial-gradient(
+    ellipse 80% 80% at 50% 50%,
+    white 10%,
+    transparent 90%
+  );
+}
+
+@utility mask-transparency-radial-* {
+  mask-image: radial-gradient(
+    ellipse 80% 80% at 50% 50%,
+    --value(--color- *) 10%,
+    transparent 90%
+  );
 }
