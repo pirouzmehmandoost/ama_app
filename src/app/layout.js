@@ -7,14 +7,16 @@ const jost = Jost({
 });
 
 export const metadata = {
-  title: "Ama Earth Group Project",
-  description: "An environmental report generator",
+  title: "AMA",
+  description: "An OpenAI Chatbot",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${jost.className} antialiased bg-slate-950`}>
+      <body
+        className={`${jost.className} antialiased bg-slate-950 overscroll-none`}
+      >
         {children}
       </body>
     </html>
